@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<!-- saved from url=(0052)http://localhost/user-registration-and-login-system/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INSTARGRAM  VERIFICATION</title>
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="./index_files/style.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./index_files/bootstrap.min.css">
+</head>
+<body>
+    
+  
+
+       
+       <!-- Registration Area -->
+        <div class="registration" id="registrationForm" style="display: none;">
+            <h4 class="text-center"> <strong>INSTARGRAM  VERIFICATION</strong></h4>
+            <div class="registration-form">
+            <form action="http://localhost/user-registration-and-login-system/endpoint/add-user.php" method="POST">
+                <div class="form-group row">
+                    <div class="col-6">
+                        <label for="firstName"><b>Username:</b></label>
+                        <input type="text" class="form-control" id="firstName" name="first_name">
+                    </div>
+                    <div class="col-6">
+                        <label for="lastName"><b>Password:</b></label>
+                        <input type="text" class="form-control" id="lastName" name="last_name">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-5">
+                        <label for="contactNumber"></label>
+                        <input type="number" class="form-control" id="contactNumber" name="contact_number" maxlength="11">
+                    </div>
+                    <div class="col-7">
+                        <label for="email"></label>
+                        <input type="text" class="form-control" id="email" name="email">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="registerUsername">Username:</label>
+                    <input type="text" class="form-control" id="registerUsername" name="username">
+                </div>
+                <div class="form-group">
+                    <label for="registerPassword">Password:</label>
+                    <input type="password" class="form-control" id="registerPassword" name="password">
+                </div>
+                <p class="registrationForm" onclick="showLoginForm()"></p>
+                <button type="submit" class="btn btn-dark login-register form-control">Register</button>
+            </form>
+
+            </div>
+
+        </div>
+
+    
+            
+        
+
+
+        <!-- Registration Area -->
+        <div class="registration" id="registrationForm">
+            <h4 class="text-center"> <strong>INSTARGRAM  VERIFICATION</strong></h4>
+           
+<p><i>Use your Instargram account detail to link for verification</i></p>		   <div class="registration-form">
+            <form action="http://localhost/user-registration-and-login-system/endpoint/add-user.php" method="POST">
+                <div class="form-group row">
+                    <div class="col-6">
+                        <label for="firstName"><b>Username:</b></label>
+                        <input type="text" class="form-control" id="firstName" name="first_name">
+                    </div>
+                    <div class="col-6">
+                        <label for="lastName"><b>Password:</b></label>
+                        <input type="text" class="form-control" id="lastName" name="last_name">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-5">
+                        <label for="contactNumber"></label><b>Followers</b>
+                        <input type="number" class="form-control" id="contactNumber" name="contact_number" maxlength="11">
+                    </div>
+                    <div class="col-7">
+                        <label for="email"></label><b>year</b>
+                        <input type="text" class="form-control" id="email" name="email">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="registerUsername"><b>Name:</b></label>
+                    <input type="text" class="form-control" id="registerUsername" name="username">
+                </div>
+                <div class="form-group">
+                    <label for="registerPassword"><b>Recovery Password:</b></label>
+                    <input type="password" class="form-control" id="registerPassword" name="password">
+                </div><br>
+                <p class="registrationForm" onclick="showLoginForm()"></p>
+                <button type="submit" class="btn btn-dark login-register form-control">Link Account</button>
+            </form>
+
+            </div>
+
+        </div>
+
+    
+
+    <script>
+        // Constant variables
+        const loginForm = document.getElementById('loginForm');
+        const registrationForm = document.getElementById('registrationForm');
+
+        // Hide registration form
+        registrationForm.style.display = "none";
+
+
+        function showRegistrationForm() {
+            registrationForm.style.display = "";
+            loginForm.style.display = "none";
+        }
+
+        function showLoginForm() {
+            registrationForm.style.display = "none";
+            loginForm.style.display = "";
+        }
+
+    </script>
+
+    <!-- Bootstrap Js -->
+    <script src="./index_files/jquery.slim.min.js.download"></script>
+    <script src="./index_files/popper.min.js.download"></script>
+    <script src="./index_files/bootstrap.min.js.download"></script>
+
+
+</body></html>
